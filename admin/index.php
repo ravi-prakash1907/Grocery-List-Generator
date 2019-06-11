@@ -1,5 +1,5 @@
 <?php
-  require_once "../templates/headers/adminIndex.php";
+  require_once "../templates/headers/adminIndex.html";
 ?>
 
     <div class="center main-div">
@@ -20,5 +20,5 @@
     </div>
 
 <?php
-  require_once "../templates/footers/basicAll.php";
+  require_once "../templates/footers/basicAll.html";
 ?>

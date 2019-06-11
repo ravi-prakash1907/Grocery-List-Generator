@@ -1,5 +1,5 @@
 <?php
-  require_once "../templates/headers/userIndex.php";
+  require_once "../templates/headers/userIndex.html";
 ?>
 
 
@@ -18,5 +18,5 @@
       </form>
     </div>
 <?php
-  require_once "../templates/footers/basicAll.php";
+  require_once "../templates/footers/basicAll.html";
 ?>

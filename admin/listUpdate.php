@@ -1,7 +1,6 @@
 <?php
 
-    require_once "../templates/headers/adminIndex.php";
-    # Make it a class so that all the variables are accessible
+    require_once "../templates/headers/adminIndex.html";
 
       $connection = mysqli_connect("localhost", "root", "");
       mysqli_select_db($connection, "households");
@@ -175,5 +174,5 @@
         }
     ?>
   <?php
-    require_once "../templates/footers/basicAll.php";
+    require_once "../templates/footers/basicAll.html";
   ?>

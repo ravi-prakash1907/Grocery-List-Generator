@@ -1,6 +1,6 @@
 <?php
 
-  require_once "../templates/headers/userConditional.php";
+  require_once "../templates/headers/userConditional.html";
 
       $connection = mysqli_connect("localhost", "root", "");
       mysqli_select_db($connection, "households");
@@ -200,5 +200,5 @@
         }
 ?>
 <?php
-  require_once "../templates/footers/basicAll.php";
+  require_once "../templates/footers/basicAll.html";
 ?>

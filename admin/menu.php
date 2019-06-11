@@ -1,5 +1,5 @@
 <?php
-  require_once "../templates/headers/adminIndex.php";
+  require_once "../templates/headers/adminIndex.html";
 
       function operation(){
         if(isset($_POST['add'])) {
@@ -63,5 +63,5 @@
     </div>
 
 <?php
-  require_once "../templates/footers/basicAll.php";
+  require_once "../templates/footers/basicAll.html";
 ?>

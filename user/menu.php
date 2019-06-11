@@ -1,5 +1,5 @@
 <?php
-  require_once "../templates/headers/userIndex.php";
+  require_once "../templates/headers/userIndex.html";
 
       function operation(){
         if(isset($_POST['old'])) {
@@ -41,5 +41,5 @@
       </div>
     </div>
   <?php
-    require_once "../templates/footers/basicAll.php";
+    require_once "../templates/footers/basicAll.html";
   ?>

@@ -22,6 +22,6 @@ To do so:
 
 > 1. Login to *Admin* account.
 > 2. Manage the items of various stores. Possible operation:-
->   * View price list of a store
->   * Update the list of a store
->   * Add new items to list of a store etc..
+>     * View price list of a store
+>     * Update the list of a store
+>     * Add new items to list of a store etc..

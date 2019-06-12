@@ -9,10 +9,10 @@
       ############################################
 
       function getTUsr($t){
-        if($t == 'panditji'){
-          return 'userPtji';
-        } else if($t == 'patanjali'){
-          return 'userPtjli';
+        if($t == 'store1'){
+          return 'usrStore1';
+        } else if($t == 'store2'){
+          return 'usrStore2';
         } else if($t == 'others'){
           return 'userOthers';
         }

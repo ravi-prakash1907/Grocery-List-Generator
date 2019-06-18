@@ -22,6 +22,26 @@ To do so:
 
 > 1. Login to *Admin* account.
 > 2. Manage the items of various stores. Possible operation:-
->     * View price list of a store
->     * Update the list of a store
->     * Add new items to list of a store etc..
+>     * **View** price list of a store
+>     * **Update** the list of a store
+>     * **Add** new items to list of a store etc..
+
+
+<hr />
+
+## Some Screenshots:
+
+#### Home
+![Login or Register](/image/login.png)
+
+#### Admin Home
+![Login or Register](/image/adminMenu.png)
+
+#### User Home
+![Login or Register](/image/userMenu.png)
+
+#### Selection of Shops
+![Login or Register](/image/selectShop.png)
+
+#### Bill
+![Login or Register](/image/finalList.png)

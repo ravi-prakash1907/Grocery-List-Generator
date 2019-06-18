@@ -26,6 +26,7 @@ To do so:
 >     * **Update** the list of a store
 >     * **Add** new items to list of a store etc..
 
+**Some Screenshots are given below for the Demo Implementation**
 
 <hr />
 

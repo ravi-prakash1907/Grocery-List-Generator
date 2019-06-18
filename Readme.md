@@ -11,11 +11,11 @@ I've designed it as several times, we forget many things while making a list of 
 Its an _easy to use_ app.
 The user just needs to follow a few of the steps, i.e.:
 
-> 1. Login with Registered Credentials. (If you ain't Registered, you would have to sign up first)
-> 2. Select the Shop/Store where you want to go for purchasing.
+> 1. **Login** with Registered Credentials. (If you ain't Registered, you would have to sign up first)
+> 2. Select the **Shop/Store** where you want to go for purchasing.
 > 3. Tick the items that you want to purchase.
 > 4. Put the quantity of the selected Items.
-> 5. Your list along with the complete Bill is here!!
+> 5. Your list along with the complete **Bill** is here!!
 
 The products' list and price of different can be managed by the _Administrator_
 To do so:

@@ -69,6 +69,7 @@
         $tableUser = getTUsr($table);
         $sql = "SELECT * FROM $table";
         $result = $connection->query($sql);
+        $boxNum = 0;
 
         if (mysqli_query($connection, $sql)){
           echo '<form class="form" action="" method="post">';
@@ -78,7 +79,8 @@
             echo '<input type="hidden" name="shopToRead" value="'.$table.'" />';
 
             while($row = $result->fetch_assoc()) {
-              echo '<input type="checkbox" name="selectedId[]" value="'.$row["id"].'"> '.$row["item"].'</input><br/>';
+              echo '<input id="box'.$boxNum.'" type="checkbox" name="selectedId[]" value="'.$row["id"].'"> <label for="box'.$boxNum++.'">'.$row["item"].'</label></input><br/>';
+              $boxNum += 1;
             }
 
             echo '<section class="button button-right buttons-group">';

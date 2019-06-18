@@ -20,10 +20,10 @@
         echo "1 new item added to shop of ".$table;
         echo '<form class="form" action="menu.php" method="post">';
         echo '<span>';
-          echo '<input type="submit" name="add" id="input" class="input clickable" value="Add More" />';
-        echo '</span> <br />';
+          echo '<input type="submit" name="add" id="input" class="input clickable editable-input" value="Add More" />';
+        echo '</span>';
         echo '<span>';
-          echo '<button type="submit" name="back" value="User Home">Admin Home</button>';
+          echo '<button type="submit" name="back" id="input" class="input clickable editable-input" value="User Home">Admin Home</button>';
         echo '</span> <br />';
         echo '</form>';
       }
@@ -80,25 +80,25 @@
         if (mysqli_query($connection, $sql)){
           if($result->num_rows > 0){
 
-            echo '<form class="form" action="" method="post">';
+            echo '<form class="form editable-form" action="" method="post">';
             echo '<h4><u>Details of new items:-</u></h4>';
             echo '<input type="hidden" name="shop" value="'.$table.'" />';
 
             while($row = $result->fetch_assoc()) {
 
                 echo '<span>';
-                  echo '<input type="text" id="username" class="username" name="item[]" value="'.$row["item"].'" />';
+                  echo '<input type="text" id="" class="editable-input" name="item[]" value="'.$row["item"].'" />';
                 echo '</span>';
                 echo '<span>';
-                  echo '<input type="text" id="username" class="username" name="unit[]" value="'.$row["unit"].'" />';
+                  echo '<input type="text" id="" class="editable-input" name="unit[]" value="'.$row["unit"].'" />';
                 echo '</span>';
                 echo '<span>';
-                  echo '<input type="text" id="username" class="username" name="unitprc[]" value="'.$row["unitPrice"].'" />';
+                  echo ' ₹<input type="text" id="" class="editable-input" name="unitprc[]" value="'.$row["unitPrice"].'" />';
                 echo '</span> <br />';
               }
-              echo '<input type="submit" name="update" value="Update" />';
+              echo '<input type="submit" name="update" class="editable-input" value="Update" />';
               echo '<span>';
-                echo '<button type="submit" name="back" value="User Home">Admin Home</button>';
+                echo '<button type="submit" name="back" class="editable-input" value="User Home">Admin Home</button>';
               echo '</span> <br />';
           echo '</form>';
           } else {
@@ -126,7 +126,6 @@
           if (!mysqli_query($connection, $sql)){
             die('Error: ' . mysqli_error($connection));
           }
-          #goto list.php
         }
         header("Location: index.php");
       }

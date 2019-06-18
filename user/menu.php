@@ -22,13 +22,16 @@
         </div>
         <div class="shops">
         <section class="block">
-          <input type="radio" name="shop" value="store1" checked="checked" />Store1
+          <input id="1" type="radio" name="shop" value="store1" checked="checked" />
+          <label for="1">Store1</label>
         </section> <br />
         <section class="block">
-          <input type="radio" name="shop" value="store2" />Store2
+          <input id="2" type="radio" name="shop" value="store2" />
+          <label for="2">Store2</label>
         </section> <br />
         <section class="block">
-          <input type="radio" name="shop" value="others" />Other Stores <br />
+          <input id="3" type="radio" name="shop" value="others" />
+          <label for="3">Other Stores</label> <br />
         </section> <br />
         </div>
 

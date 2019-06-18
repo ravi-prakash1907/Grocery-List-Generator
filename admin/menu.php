@@ -3,22 +3,20 @@
 
       function operation(){
         if(isset($_POST['add'])) {
+          echo "<hr />";
           echo '<span>';
-            echo '<label for="uname">Item:</label>';
-            echo '<input type="text" id="username" class="username" name="item" value="" />';
+            echo '<label for="item">Item: </label>';
+            echo '<input type="text" id="item" class="editable-input" name="item" value="" />';
           echo '</span> <br />';
           echo '<span>';
-            echo '<label for="uname">Unit:</label>';
-            echo '<input type="text" id="username" class="username" name="unit" value="" />';
+            echo '<label for="unit">Unit: </label>';
+            echo '<input type="text" id="unit" class="editable-input" name="unit" value="" />';
           echo '</span> <br />';
           echo '<span>';
-            echo '<label for="uname">Unit Price:</label>';
-            echo '<input type="text" id="username" class="username" name="unitprc" value="" />';
+            echo '<label for="unotPrice">Unit Price: ₹</label>';
+            echo '<input type="text" id="unotPrice" class="editable-input" name="unitprc" value="" />';
           echo '</span> <br />';
-            echo '<input type="submit" name="add" value="Add New Item" /><br />';
-          echo '<span>';
-            echo '<button type="submit" name="back" value="User Home">Admin Home</button>';
-          echo '</span> <br />';
+            echo '</br><input type="submit" class="editable-input" name="add" value="Add New Item" />';
         } else if(isset($_POST['view'])){
           echo '<input type="submit" name="view" value="View List" />';
         } else if(isset($_POST['update'])){
@@ -43,13 +41,16 @@
         </div>
         <div class="shops">
         <section class="block">
-          <input type="radio" name="shop" value="store1" checked="checked" />Store1
+          <input id="1" type="radio" name="shop" value="store1" checked="checked" />
+          <label for="1">Store1</label>
         </section> <br />
         <section class="block">
-          <input type="radio" name="shop" value="store2" />Store2
+          <input id="2" type="radio" name="shop" value="store2" />
+          <label for="2">Store2</label>
         </section> <br />
         <section class="block">
-          <input type="radio" name="shop" value="others" />Other Stores
+          <input id="3" type="radio" name="shop" value="others" />
+          <label for="3">Other Stores</label> <br />
         </section> <br />
         </div>
 
